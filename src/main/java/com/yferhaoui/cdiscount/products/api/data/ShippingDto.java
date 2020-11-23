@@ -8,14 +8,15 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
 @Data
-public final class Products implements Serializable {
+public final class ShippingDto implements Serializable {
+
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -115843262901136673L;
+	private static final long serialVersionUID = -6930270049207692922L;
 	
-	@SerializedName(value = "Products")
+	@SerializedName(value = "Shippings")
 	@Expose(serialize = true, deserialize = true)
-	private OpenAPIProductDto openAPIProductDto;
+	private Shipping[] shippings;
 }

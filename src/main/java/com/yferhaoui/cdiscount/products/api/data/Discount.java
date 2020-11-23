@@ -5,9 +5,9 @@ import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 public final class Discount implements Serializable {
 
 	/**

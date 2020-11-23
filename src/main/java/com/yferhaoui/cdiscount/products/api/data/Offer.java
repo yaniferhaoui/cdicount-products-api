@@ -6,9 +6,9 @@ import java.math.BigDecimal;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 public final class Offer implements Serializable {
 
 	/**
@@ -44,9 +44,9 @@ public final class Offer implements Serializable {
 	@Expose(serialize = true, deserialize = true)
 	private Seller seller;
 	
-	@SerializedName(value = "Shippings")
+	@SerializedName(value = "ShippingDto")
 	@Expose(serialize = true, deserialize = true)
-	private Shipping[] shippings;
+	private ShippingDto shippingDto;
 	
 	@SerializedName(value = "Sizes")
 	@Expose(serialize = true, deserialize = true)
